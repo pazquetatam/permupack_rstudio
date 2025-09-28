@@ -1,0 +1,15 @@
+importFrom(stats, dist, cmdscale, prcomp, cov, rnorm, runif)
+importFrom(utils, read.csv, write.csv, read.table, write.table)
+importFrom(graphics, plot, hist, boxplot, abline, legend)
+importFrom(grDevices, colorRampPalette, dev.off)
+importFrom(methods, is)
+importFrom(ggplot2, ggplot, aes, geom_point, geom_tile, facet_wrap, labs, theme)
+
+exportClasses(Permutation)
+exportMethods(inverse, '%.%')
+export(permutation,
+       getIdentityPermutation,
+       getRandomPermutation,
+       getPermutationFromScores,
+       getFirstOrderMarginals,
+       plotFirstOrderMarginals)
